@@ -1,23 +1,26 @@
 import React from "react";
 import { Box, Link, Typography } from "@mui/material";
 import Image from "mui-image";
-import foto from "../assets/vestido-amarillo.jpeg";
+
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+import photo from '../assets/photo1.png'
+
 import useInviteStyles from "./Invite.module";
+import Spotify from '../Spotify/Spotify'
 
 const Invite = () => {
   const classes = useInviteStyles();
 
   // TODO ADD FORMAT HERE
-  const whatsMessage =
-    "Hola Agos Confirmo mi asistencia para el evento el 8/10.\
-    DATOS:\
-  Adultos: \
-  Niños (de 2 a 12): \
-  Menu especial: Veggie/Celiaco";
+  const whatsMessage = // eslint-disable-next-line
+    "Hola Agos Confirmo mi asistencia para el evento el 8/10.\n \
+    DATOS:\n \
+    Adultos: \n \
+    Niños (de 2 a 12): \n \
+    Menu especial: Veggie/Celiaco";
 
   // FROM https://mailto.vercel.app/
   const emailMessage = `mailto:bloin.lourdes@gmail.com?cc=nahuelcalderon@gmail.com&subject=${encodeURIComponent(
@@ -32,7 +35,7 @@ const Invite = () => {
           height="calc(100vh)"
           width="calc(100vh)"
           fit="cover"
-          src={foto}
+          src={photo}
         />
       </Box>
 
@@ -65,6 +68,7 @@ const Invite = () => {
           Te espero!!
         </Typography>
       </Box>
+      <Spotify />
     </Box>
   );
 };
