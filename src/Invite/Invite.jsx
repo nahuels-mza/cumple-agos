@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Link, Typography } from "@mui/material";
 import Image from "mui-image";
-import foto from "../assets/foto1.png";
+import foto from "../assets/vestido-amarillo.jpeg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
