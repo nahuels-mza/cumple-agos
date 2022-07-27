@@ -5,6 +5,7 @@ import foto from "../assets/foto1.png";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import useInviteStyles from "./Invite.module";
 
 const Invite = () => {
@@ -19,8 +20,9 @@ const Invite = () => {
   Menu especial: Veggie/Celiaco";
 
   // FROM https://mailto.vercel.app/
-  const emailMessage =
-    "mailto:bloin.lourdes@gmail.com?cc=nahuelcalderon%40gmail.com&subject=Confirmo%20asistencia%20al%20cumple%20de%20Agos!&body=Datos%3A%0D%0ANombre%20y%20Apellido%3A%0D%0AAdultos%20%23%3A%20%0D%0ANi%C3%B1os%20(de%202%20a%2012)%20%23%3A%0D%0AMenu%20especial%3A%20Veggie%2FCeliaco%3A";
+  const emailMessage = `mailto:bloin.lourdes@gmail.com?cc=nahuelcalderon@gmail.com&subject=${encodeURIComponent(
+    "Confirmo asistencia al cumple de Agos",
+  )}&body=Datos:%0DNombre y Apellido:%0DAdultos:%0DNiños de 2 a 12 años:%0DMenu especial: Si (Veggie/Celiaco) - No`;
 
   return (
     <Box component="div" className={classes.container}>
@@ -45,15 +47,18 @@ const Invite = () => {
           <LocationOnIcon className={classes.icon} fontSize="large" />
         </Link>
         <Typography>No olvides confirmar!</Typography>
-        <Box flexDirection="row">
-          <Link href={emailMessage}>
-            <EmailIcon className={classes.icon} fontSize="large" />
+        <Box flexDirection="row" className={classes.confirmation}>
+          <Link target="_blank" href="https://forms.gle/mvkm2yPdj5CqsqQ28">
+            <ThumbUpAltIcon className={classes.icon} fontSize="large" />
           </Link>
           <Link
             href={`https://wa.me/5492615261617?text=${whatsMessage}`}
             marginLeft={2}
           >
             <WhatsAppIcon className={classes.icon} fontSize="large" />
+          </Link>
+          <Link href={emailMessage} marginLeft={2}>
+            <EmailIcon className={classes.icon} fontSize="large" />
           </Link>
         </Box>
         <Typography variant="h4" textAlign="center">
