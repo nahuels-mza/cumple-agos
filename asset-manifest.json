@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cumple-agos/static/css/main.d2e31cd5.css",
+    "main.js": "/cumple-agos/static/js/main.e73e9677.js",
+    "static/js/787.654fbaae.chunk.js": "/cumple-agos/static/js/787.654fbaae.chunk.js",
+    "index.html": "/cumple-agos/index.html",
+    "main.d2e31cd5.css.map": "/cumple-agos/static/css/main.d2e31cd5.css.map",
+    "main.e73e9677.js.map": "/cumple-agos/static/js/main.e73e9677.js.map",
+    "787.654fbaae.chunk.js.map": "/cumple-agos/static/js/787.654fbaae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2e31cd5.css",
+    "static/js/main.e73e9677.js"
+  ]
+}
