@@ -15,7 +15,7 @@ const Spotify = () => {
       flexDirection="column"
       padding={4}
     >
-      <Typography textAlign="center">
+      <Typography textAlign="center" mt={4} mb={4}>
         PREPARATE PARA DISFRUTAR DE LA FIESTA
       </Typography>
 

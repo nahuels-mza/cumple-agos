@@ -1,18 +1,15 @@
 import { makeStyles } from "@mui/styles";
 
 const useInviteStyles = makeStyles((theme) => ({
-  container: {
-    [theme.breakpoints.down("sm")]: {
-      width: "100% !important",
-    },
-  },
   imageContainer: {
     backgroundSize: "cover !important",
     backgroundPosition: "0% 18% !important",
     position: "relative",
     height: "100vh",
     [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "30% 18% !important",
+      backgroundPosition: "initial !important",
+      backgroundSize: "contain !important",
+      height: "75vh",
     },
   },
   textContainer: {
@@ -26,13 +23,15 @@ const useInviteStyles = makeStyles((theme) => ({
     padding: "20px",
     [theme.breakpoints.down("sm")]: {
       width: "calc(90vw)",
-      left: 0,
-      top: "15%",
+      marginTop: "9rem",
     },
   },
   font: {
     fontFamily: "fantasy !important",
     fontWeight: `600 !important`,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "30px !important",
+    },
   },
   confirmation: {
     "& svg": {

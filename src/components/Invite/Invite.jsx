@@ -1,12 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-
 import photo from "../../assets/photo1.png";
-
 import useInviteStyles from "./Invite.module";
-import Spotify from "../Spotify/Spotify";
-import Location from "../Location/Location";
-import Confirmation from "../Confirmation/Confirmation";
 
 const Invite = () => {
   const classes = useInviteStyles();
@@ -16,7 +11,7 @@ const Invite = () => {
       component="section"
       className={`${classes.imageContainer} ${classes.parallax}`}
       sx={{
-        background: `url(${photo}) no-repeat center center fixed`,
+        background: `url(${photo}) no-repeat center fixed`,
       }}
       width="100%"
     >
