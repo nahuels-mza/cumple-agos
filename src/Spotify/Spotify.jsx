@@ -8,9 +8,9 @@ const Spotify = () => {
     const playlist = 'https://open.spotify.com/playlist/2FKKQuINQFvPhavl9gleIG?si=042f61aa87b349f6'
     return(
         <Box component="div" className={style.container} display="flex" flexDirection="column" padding={4}>
-            <Typography>PREPARATE PARA DISFRUTAR DE LA FIESTA</Typography>
+            <Typography textAlign="center">PREPARATE PARA DISFRUTAR DE LA FIESTA</Typography>
 
-           <Link target="_blank" href={playlist} ><img src={spotify} width={50} fontSize="large" fit="cover"  /></Link>
+           <Link target="_blank" href={playlist} ><img src={spotify} width={50} fontSize="large" fit="cover" alt="spotify" /></Link>
 
         </Box>
     )
