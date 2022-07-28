@@ -4,34 +4,24 @@ const useInviteStyles = makeStyles((theme) => ({
   container: {
     [theme.breakpoints.down("sm")]: {
       width: "100% !important",
-      // height: "100% !important",
     },
   },
   imageContainer: {
-    "& div": {
-      margin: "auto",
-      [theme.breakpoints.down("sm")]: {
-        width: "100% !important",
-        // height: "100% !important",
-      },
+    backgroundSize: "cover !important",
+    backgroundPosition: "0% 18% !important",
+    position: "relative",
+    height: "100vh",
+    [theme.breakpoints.down("sm")]: {
+      backgroundPosition: "30% 18% !important",
     },
   },
-  image: {
-    objectPosition: "20% 37%",
-    margin: "auto",
-  },
   textContainer: {
-    position: "absolute",
-    top: "35%",
-    left: "28%",
-    width: "calc(45vw)",
+    width: "100%",
     display: "flex",
-    justifyContent: "space-between",
+    marginTop: "12rem",
     backgroundColor: "#e6e6e699",
     mixBlendMode: "hard-light",
     flexDirection: "column",
-    minHeight: "25rem",
-    borderRadius: "20px",
     alignItems: "center",
     padding: "20px",
     [theme.breakpoints.down("sm")]: {
@@ -40,6 +30,10 @@ const useInviteStyles = makeStyles((theme) => ({
       top: "15%",
     },
   },
+  font: {
+    fontFamily: "fantasy !important",
+    fontWeight: `600 !important`,
+  },
   confirmation: {
     "& svg": {
       fill: "#ab83ab",
@@ -47,6 +41,10 @@ const useInviteStyles = makeStyles((theme) => ({
   },
   icon: {
     cursor: "pointer",
+  },
+  parallax: {
+    willChange: "contents",
+    overflow: "hidden",
   },
 }));
 
