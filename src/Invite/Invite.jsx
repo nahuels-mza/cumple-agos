@@ -6,10 +6,10 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
-import photo from '../assets/photo1.png'
+import photo from "../assets/photo1.png";
 
 import useInviteStyles from "./Invite.module";
-import Spotify from '../Spotify/Spotify'
+import Spotify from "../Spotify/Spotify";
 
 const Invite = () => {
   const classes = useInviteStyles();
@@ -40,7 +40,7 @@ const Invite = () => {
       </Box>
 
       <Box component="div" className={classes.textContainer}>
-        <Typography variant="h2" textAlign="center">
+        <Typography variant="h2" textAlign="center" className={classes.h2text}>
           SAVE THE DATE!
         </Typography>
         <Typography variant="h4" textAlign="center">

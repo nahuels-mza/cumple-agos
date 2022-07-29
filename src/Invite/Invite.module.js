@@ -2,17 +2,18 @@ import { makeStyles } from "@mui/styles";
 
 const useInviteStyles = makeStyles((theme) => ({
   container: {
-    [theme.breakpoints.down("sm")]: {
-      width: "100% !important",
-      // height: "100% !important",
-    },
+    display: "flex",
+    flexDirection: "column",
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   imageContainer: {
     "& div": {
       margin: "auto",
       [theme.breakpoints.down("sm")]: {
         width: "100% !important",
-        // height: "100% !important",
+        height: "100% !important",
       },
     },
   },
@@ -22,9 +23,8 @@ const useInviteStyles = makeStyles((theme) => ({
   },
   textContainer: {
     position: "absolute",
-    top: "35%",
-    left: "28%",
-    width: "calc(45vw)",
+    top: "30%",
+    width: "80vh",
     display: "flex",
     justifyContent: "space-between",
     backgroundColor: "#e6e6e699",
@@ -35,9 +35,8 @@ const useInviteStyles = makeStyles((theme) => ({
     alignItems: "center",
     padding: "20px",
     [theme.breakpoints.down("sm")]: {
-      width: "calc(90vw)",
-      left: 0,
-      top: "15%",
+      width: "80%",
+      top: "10%",
     },
   },
   confirmation: {
@@ -47,6 +46,11 @@ const useInviteStyles = makeStyles((theme) => ({
   },
   icon: {
     cursor: "pointer",
+  },
+  h2text: {
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2.75rem !important",
+    },
   },
 }));
 
