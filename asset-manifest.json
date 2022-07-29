@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/cumple-agos/static/css/main.e6c13ad2.css",
-    "main.js": "/cumple-agos/static/js/main.57963ad2.js",
+    "main.js": "/cumple-agos/static/js/main.ec04df71.js",
     "static/js/787.654fbaae.chunk.js": "/cumple-agos/static/js/787.654fbaae.chunk.js",
     "static/media/photo1.png": "/cumple-agos/static/media/photo1.336328567cadd6a67185.png",
     "static/media/spotify.png": "/cumple-agos/static/media/spotify.cd66b8f63f6566194c7e.png",
     "index.html": "/cumple-agos/index.html",
     "main.e6c13ad2.css.map": "/cumple-agos/static/css/main.e6c13ad2.css.map",
-    "main.57963ad2.js.map": "/cumple-agos/static/js/main.57963ad2.js.map",
+    "main.ec04df71.js.map": "/cumple-agos/static/js/main.ec04df71.js.map",
     "787.654fbaae.chunk.js.map": "/cumple-agos/static/js/787.654fbaae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.57963ad2.js"
+    "static/js/main.ec04df71.js"
   ]
 }
