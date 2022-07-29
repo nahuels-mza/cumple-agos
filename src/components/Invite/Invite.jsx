@@ -17,7 +17,7 @@ const Invite = () => {
     >
       <Box component="div" className={classes.textContainer}>
         <Typography variant="h2" textAlign="center" className={classes.font}>
-          save the date
+          Save the Date
         </Typography>
         <Typography variant="h4" textAlign="center" className={classes.font}>
           08 / 10 / 22
@@ -43,7 +43,6 @@ function Timer() {
 
     if (difference > 0) {
       timeLeft = {
-
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor(difference / (3600000 ) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
@@ -63,22 +62,17 @@ function Timer() {
   });
 
   return (
-    <Box component="div" className={classes.textContainer}>
-      {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
-        <p>
-
-          Party starts in
-          <span>{timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})}</span>
-          days
-          <span>{timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}</span>
-          <span>:</span>
-          <span>{timeLeft.minutes.toLocaleString('en-US', {minimumIntegerDigits: 2})}</span>
-          <span>:</span>
-          <span>{timeLeft.seconds.toLocaleString('en-US', {minimumIntegerDigits: 2})}</span>
-        </p>
-      ) : (
-        <p>Time is up 🔥</p>
-      )}
+    <Box component="div" className={classes.textContainer}style={{ background: '#8383c3'}}>
+      <Typography variant="h2" textAlign="center" className={classes.font}>
+        {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
+          <p>
+            Party starts in {timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})} days {timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}
+            :{timeLeft.minutes.toLocaleString('en-US', {minimumIntegerDigits: 2})}:{timeLeft.seconds.toLocaleString('en-US', {minimumIntegerDigits: 2})}
+          </p>
+        ) : (
+          <p>Time is up 🔥</p>
+        )}
+      </Typography>
     </Box>
   );
 }
