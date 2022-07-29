@@ -18,12 +18,12 @@ const useInviteStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    objectPosition: "20% 37%",
+    objectPosition: "0% 0% !important",
     margin: "auto",
   },
   textContainer: {
     position: "absolute",
-    top: "30%",
+    top: "15%",
     width: "80vh",
     display: "flex",
     justifyContent: "space-between",
@@ -33,7 +33,7 @@ const useInviteStyles = makeStyles((theme) => ({
     minHeight: "25rem",
     borderRadius: "20px",
     alignItems: "center",
-    padding: "20px",
+    padding: "60px",
     [theme.breakpoints.down("sm")]: {
       width: "80%",
       top: "10%",
@@ -47,15 +47,50 @@ const useInviteStyles = makeStyles((theme) => ({
   icon: {
     cursor: "pointer",
   },
-  mapIcon:{
-      fontSize:"3rem !important",
+  mapIcon: {
+    fontSize: "3rem !important",
   },
-  h2text: {
+  title: {
+    fontFamily: "Brusher !important",
+    fontSize: "5rem !important",
     [theme.breakpoints.down("sm")]: {
       fontSize: "2.75rem !important",
     },
   },
 
+  nameContainer: {
+    borderRadius: "50%",
+    backgroundColor: "black",
+    width: "135px",
+    height: "135px",
+    padding: "15px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    top: "1%",
+    zIndex: "2",
+  },
+  name: {
+    color: "white",
+    fontFamily: "Brusher !important",
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2.75rem !important",
+    },
+  },
+  dateContainer: {
+    margin: "1rem 0",
+    borderTop: "2px solid black",
+    borderBottom: "2px solid black",
+
+    borderBottomStyle: "dashed",
+    borderTopStyle: "dashed",
+    padding: "5px",
+  },
+  date: {
+    fontSize: "4rem !important",
+  },
 }));
 
 export default useInviteStyles;

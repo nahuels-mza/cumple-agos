@@ -1,17 +1,17 @@
-import React from "react"
-import { Box, Link, Typography } from "@mui/material"
-import Image from "mui-image"
-import LocationOnIcon from "@mui/icons-material/LocationOn"
-import EmailIcon from "@mui/icons-material/Email"
-import WhatsAppIcon from "@mui/icons-material/WhatsApp"
-import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt"
+import React from "react";
+import { Box, Link, Typography } from "@mui/material";
+import Image from "mui-image";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EmailIcon from "@mui/icons-material/Email";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 
-import useInviteStyles from "./Invite.module"
-import photo from "../assets/photo1.png"
-import Timer from "../Timer/Timer"
+import useInviteStyles from "./Invite.module";
+import photo from "../assets/photo1.png";
+import Timer from "../Timer/Timer";
 
 const Invite = () => {
-  const classes = useInviteStyles()
+  const classes = useInviteStyles();
 
   // TODO ADD FORMAT HERE
   const whatsMessage = // eslint-disable-next-line
@@ -37,17 +37,26 @@ const Invite = () => {
           src={photo}
         />
       </Box>
-
-      <Box component="div" className={classes.textContainer}>
-        <Typography variant="h2" textAlign="center" className={classes.h2text}>
-          SAVE THE DATE!
+      <Box className={classes.nameContainer}>
+        <Typography variant="h2" textAlign="center" className={classes.name}>
+          AGOS
         </Typography>
-        <Typography variant="h4" textAlign="center">
-          08 / 10 / 22
+      </Box>
+      <Box component="div" className={classes.textContainer}>
+        <Typography variant="h2" textAlign="center" className={classes.title}>
+          save the date
         </Typography>
         <Timer />
+        <Box className={classes.dateContainer}>
+          <Typography variant="h4" textAlign="center" className={classes.date}>
+            08 | 10 | 22
+          </Typography>
+        </Box>
         <Link target="_blank" href="https://goo.gl/maps/73ZTibLhouNxPVN19">
-          <LocationOnIcon className={`${classes.icon} ${classes.mapIcon}`} fontSize="large" />
+          <LocationOnIcon
+            className={`${classes.icon} ${classes.mapIcon}`}
+            fontSize="large"
+          />
         </Link>
         <Typography variant="h5">No olvides confirmar!</Typography>
         <Box flexDirection="row" className={classes.confirmation}>
@@ -68,9 +77,9 @@ const Invite = () => {
           Te espero!!
         </Typography>
       </Box>
+      {/* <Spotify /> */}
     </Box>
-  )
-}
+  );
+};
 
-
-  export default Invite
+export default Invite;
