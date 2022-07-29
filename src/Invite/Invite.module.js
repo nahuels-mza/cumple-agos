@@ -47,11 +47,15 @@ const useInviteStyles = makeStyles((theme) => ({
   icon: {
     cursor: "pointer",
   },
+  mapIcon:{
+      fontSize:"3rem !important",
+  },
   h2text: {
     [theme.breakpoints.down("sm")]: {
       fontSize: "2.75rem !important",
     },
   },
+
 }));
 
 export default useInviteStyles;

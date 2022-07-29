@@ -1,18 +1,17 @@
-import React from "react";
-import { Box, Link, Typography } from "@mui/material";
-import Image from "mui-image";
+import React from "react"
+import { Box, Link, Typography } from "@mui/material"
+import Image from "mui-image"
+import LocationOnIcon from "@mui/icons-material/LocationOn"
+import EmailIcon from "@mui/icons-material/Email"
+import WhatsAppIcon from "@mui/icons-material/WhatsApp"
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt"
 
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import EmailIcon from "@mui/icons-material/Email";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
-import photo from "../assets/photo1.png";
-
-import useInviteStyles from "./Invite.module";
-import Spotify from "../Spotify/Spotify";
+import useInviteStyles from "./Invite.module"
+import photo from "../assets/photo1.png"
+import Timer from "../Timer/Timer"
 
 const Invite = () => {
-  const classes = useInviteStyles();
+  const classes = useInviteStyles()
 
   // TODO ADD FORMAT HERE
   const whatsMessage = // eslint-disable-next-line
@@ -46,10 +45,11 @@ const Invite = () => {
         <Typography variant="h4" textAlign="center">
           08 / 10 / 22
         </Typography>
+        <Timer />
         <Link target="_blank" href="https://goo.gl/maps/73ZTibLhouNxPVN19">
-          <LocationOnIcon className={classes.icon} fontSize="large" />
+          <LocationOnIcon className={`${classes.icon} ${classes.mapIcon}`} fontSize="large" />
         </Link>
-        <Typography>No olvides confirmar!</Typography>
+        <Typography variant="h5">No olvides confirmar!</Typography>
         <Box flexDirection="row" className={classes.confirmation}>
           <Link target="_blank" href="https://forms.gle/mvkm2yPdj5CqsqQ28">
             <ThumbUpAltIcon className={classes.icon} fontSize="large" />
@@ -68,9 +68,9 @@ const Invite = () => {
           Te espero!!
         </Typography>
       </Box>
-      <Spotify />
     </Box>
-  );
-};
+  )
+}
 
-export default Invite;
+
+  export default Invite
