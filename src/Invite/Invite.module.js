@@ -18,7 +18,7 @@ const useInviteStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    objectPosition: "0% 0% !important",
+    objectPosition: "0% 65% !important",
     margin: "auto",
   },
   textContainer: {
@@ -41,7 +41,7 @@ const useInviteStyles = makeStyles((theme) => ({
   },
   confirmation: {
     "& svg": {
-      fill: "#ab83ab",
+      fill: "#32396c",
     },
   },
   icon: {
@@ -50,6 +50,9 @@ const useInviteStyles = makeStyles((theme) => ({
   mapIcon: {
     fontSize: "3rem !important",
   },
+  gifIcon:{
+    fontSize:"2rem !important",
+  },
   title: {
     fontFamily: "Brusher !important",
     fontSize: "5rem !important",
@@ -57,7 +60,6 @@ const useInviteStyles = makeStyles((theme) => ({
       fontSize: "2.75rem !important",
     },
   },
-
   nameContainer: {
     borderRadius: "50%",
     backgroundColor: "black",
@@ -69,14 +71,14 @@ const useInviteStyles = makeStyles((theme) => ({
     justifyContent: "center",
     position: "absolute",
     top: "1%",
-    zIndex: "2",
+    zIndex: "1",
   },
   name: {
     color: "white",
     fontFamily: "Brusher !important",
 
     [theme.breakpoints.down("sm")]: {
-      fontSize: "2.75rem !important",
+      fontSize: "2.5rem !important",
     },
   },
   dateContainer: {

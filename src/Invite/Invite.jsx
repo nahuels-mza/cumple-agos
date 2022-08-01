@@ -1,24 +1,25 @@
-import React from "react";
-import { Box, Link, Typography } from "@mui/material";
-import Image from "mui-image";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import EmailIcon from "@mui/icons-material/Email";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+import React from "react"
+import { Box, Link, Typography } from "@mui/material"
+import Image from "mui-image"
+import LocationOnIcon from "@mui/icons-material/LocationOn"
+import EmailIcon from "@mui/icons-material/Email"
+import WhatsAppIcon from "@mui/icons-material/WhatsApp"
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt"
+import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 
 import useInviteStyles from "./Invite.module";
-import photo from "../assets/photo1.png";
+import photo from "../assets/agosMainPic.jpg";
 import Timer from "../Timer/Timer";
-
+import Gift from '../Gift/Gitt'
 const Invite = () => {
   const classes = useInviteStyles();
 
   // TODO ADD FORMAT HERE
   const whatsMessage = // eslint-disable-next-line
-    "Hola Agos Confirmo mi asistencia para el evento el 8/10.\n \
-    DATOS:\n \
-    Adultos: \n \
-    Niños (de 2 a 12): \n \
+    "Hola Agos Confirmo mi asistencia para el cumple\r\n\r\n \
+    DATOS\r\n\r\n \
+    Adultos:\r\n\r\n \
+    Niños (de 2 a 12): \r\n\r\n \
     Menu especial: Veggie/Celiaco";
 
   // FROM https://mailto.vercel.app/
@@ -46,19 +47,19 @@ const Invite = () => {
         <Typography variant="h2" textAlign="center" className={classes.title}>
           save the date
         </Typography>
-        <Timer />
         <Box className={classes.dateContainer}>
           <Typography variant="h4" textAlign="center" className={classes.date}>
             08 | 10 | 22
           </Typography>
         </Box>
+        <Timer />
         <Link target="_blank" href="https://goo.gl/maps/73ZTibLhouNxPVN19">
           <LocationOnIcon
             className={`${classes.icon} ${classes.mapIcon}`}
             fontSize="large"
           />
         </Link>
-        <Typography variant="h5">No olvides confirmar!</Typography>
+        <Typography variant="h5" color="#ffffff">No olvides confirmar!</Typography>
         <Box flexDirection="row" className={classes.confirmation}>
           <Link target="_blank" href="https://forms.gle/mvkm2yPdj5CqsqQ28">
             <ThumbUpAltIcon className={classes.icon} fontSize="large" />
@@ -73,11 +74,22 @@ const Invite = () => {
             <EmailIcon className={classes.icon} fontSize="large" />
           </Link>
         </Box>
-        <Typography variant="h4" textAlign="center">
+        {/* <Typography variant="h4" textAlign="center">
           Te espero!!
+        </Typography> */}
+        <Box component="div" className={classes.imageContainer}>
+        <Box component="div" className={classes.imageContainer}>
+        <Typography variant="h5" textAlign="center" fontStyle="italic">
+
+          <Box component="div" className={classes.imageContainer }>
+          <CardGiftcardIcon className={classes.gifIcon} />
+          <Gift />
+          <CardGiftcardIcon className={classes.gifIcon} />
+          </Box>
         </Typography>
+        </Box>
       </Box>
-      {/* <Spotify /> */}
+      </Box>
     </Box>
   );
 };
