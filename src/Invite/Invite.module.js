@@ -41,11 +41,12 @@ const useInviteStyles = makeStyles((theme) => ({
   },
   confirmation: {
     "& svg": {
-      fill: "#32396c",
+      fill: "#b247a49e",
     },
   },
   icon: {
     cursor: "pointer",
+    transition: "transform .2s",
   },
   mapIcon: {
     fontSize: "3rem !important",
@@ -56,6 +57,9 @@ const useInviteStyles = makeStyles((theme) => ({
   title: {
     fontFamily: "Brusher !important",
     fontSize: "5rem !important",
+    background: "-webkit-linear-gradient(45deg, #09009f, #9500ffa6 80%)",
+    "-webkit-background-clip": "text",
+    "-webkit-text-fill-color": "transparent",
     [theme.breakpoints.down("sm")]: {
       fontSize: "2.75rem !important",
     },
@@ -72,6 +76,7 @@ const useInviteStyles = makeStyles((theme) => ({
     position: "absolute",
     top: "1%",
     zIndex: "1",
+    background: "-webkit-linear-gradient(45deg, #09009f, #9500ffa6 80%)",
   },
   name: {
     color: "white",

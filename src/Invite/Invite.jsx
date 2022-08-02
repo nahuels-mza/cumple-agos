@@ -5,12 +5,12 @@ import LocationOnIcon from "@mui/icons-material/LocationOn"
 import EmailIcon from "@mui/icons-material/Email"
 import WhatsAppIcon from "@mui/icons-material/WhatsApp"
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt"
-import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
+
 
 import useInviteStyles from "./Invite.module";
 import photo from "../assets/agosMainPic.jpg";
 import Timer from "../Timer/Timer";
-import Gift from '../Gift/Gitt'
+import Gift from '../Gift/Gift'
 const Invite = () => {
   const classes = useInviteStyles();
 
@@ -60,7 +60,7 @@ const Invite = () => {
           />
         </Link>
         <Typography variant="h5" color="#ffffff">No olvides confirmar!</Typography>
-        <Box flexDirection="row" className={classes.confirmation}>
+        <Box flexDirection="row" className={classes.confirmation} margin="10px 0">
           <Link target="_blank" href="https://forms.gle/mvkm2yPdj5CqsqQ28">
             <ThumbUpAltIcon className={classes.icon} fontSize="large" />
           </Link>
@@ -74,22 +74,8 @@ const Invite = () => {
             <EmailIcon className={classes.icon} fontSize="large" />
           </Link>
         </Box>
-        {/* <Typography variant="h4" textAlign="center">
-          Te espero!!
-        </Typography> */}
-        <Box component="div" className={classes.imageContainer}>
-        <Box component="div" className={classes.imageContainer}>
-        <Typography variant="h5" textAlign="center" fontStyle="italic">
-
-          <Box component="div" className={classes.imageContainer }>
-          <CardGiftcardIcon className={classes.gifIcon} />
-          <Gift />
-          <CardGiftcardIcon className={classes.gifIcon} />
-          </Box>
-        </Typography>
-        </Box>
-      </Box>
-      </Box>
+        <Gift />
+       </Box>
     </Box>
   );
 };
