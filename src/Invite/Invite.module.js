@@ -12,14 +12,17 @@ const useInviteStyles = makeStyles((theme) => ({
     "& div": {
       margin: "auto",
       [theme.breakpoints.down("sm")]: {
-        width: "100% !important",
-        height: "100% !important",
+        width: "100vh !important",
+        height: "100vh !important",
       },
     },
   },
   image: {
     objectPosition: "0% 65% !important",
     margin: "auto",
+    [theme.breakpoints.down("sm")]: {
+      objectPosition: "0% 95% !important",
+    },
   },
   textContainer: {
     position: "absolute",
@@ -35,8 +38,8 @@ const useInviteStyles = makeStyles((theme) => ({
     alignItems: "center",
     padding: "60px",
     [theme.breakpoints.down("sm")]: {
-      width: "80%",
       top: "10%",
+      width: "90vh",
     },
   },
   confirmation: {
@@ -77,13 +80,17 @@ const useInviteStyles = makeStyles((theme) => ({
     top: "1%",
     zIndex: "1",
     background: "-webkit-linear-gradient(45deg, #09009f, #9500ffa6 80%)",
+    [theme.breakpoints.down("sm")]: {
+      width: "17vw !important",
+      height: "17vw !important",
+    },
   },
   name: {
     color: "white",
     fontFamily: "Brusher !important",
 
     [theme.breakpoints.down("sm")]: {
-      fontSize: "2.5rem !important",
+      fontSize: "2rem !important",
     },
   },
   dateContainer: {
@@ -97,6 +104,9 @@ const useInviteStyles = makeStyles((theme) => ({
   },
   date: {
     fontSize: "4rem !important",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2rem !important",
+    },
   },
 }));
 

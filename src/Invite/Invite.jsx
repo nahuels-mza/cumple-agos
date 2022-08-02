@@ -16,24 +16,27 @@ const Invite = () => {
 
   // TODO ADD FORMAT HERE
   const whatsMessage = // eslint-disable-next-line
-    "Hola Agos Confirmo mi asistencia para el cumple\r\n\r\n \
-    DATOS\r\n\r\n \
-    Adultos:\r\n\r\n \
-    Niños (de 2 a 12): \r\n\r\n \
-    Menu especial: Veggie/Celiaco";
+    "Hola Agos confirmo mi asistencia para el cumple%0a \
+    Cantidad de Adultos:%0a \
+    Cantidad de Niños (de 2 a 12): %0a \
+    Menu especial: Veggie/Celiaco %0a \
+    Tienes alguna alergia o restricción alimentaria?";
 
   // FROM https://mailto.vercel.app/
   const emailMessage = `mailto:bloin.lourdes@gmail.com?cc=nahuelcalderon@gmail.com&subject=${encodeURIComponent(
     "Confirmo asistencia al cumple de Agos",
-  )}&body=Datos:%0DNombre y Apellido:%0DAdultos:%0DNiños de 2 a 12 años:%0DMenu especial: Si (Veggie/Celiaco) - No`;
+  )}&body=Cantidad de Adultos:%0a \
+  Cantidad de Niños (de 2 a 12): %0a \
+  Menu especial: Veggie/Celiaco %0a \
+  Tienes alguna alergia o restricción alimentaria?`;
 
   return (
     <Box component="div" className={classes.container}>
       <Box component="div" className={classes.imageContainer}>
         <Image
           className={classes.image}
-          height="calc(100vh)"
-          width="calc(100vh)"
+          height="100vh"
+          width="100vh"
           fit="cover"
           src={photo}
         />
