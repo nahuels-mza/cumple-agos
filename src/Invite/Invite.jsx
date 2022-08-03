@@ -18,7 +18,7 @@ const Invite = () => {
   const whatsMessage = // eslint-disable-next-line
     "Hola Agos confirmo mi asistencia para el cumple%0a \
     Cantidad de Adultos:%0a \
-    Cantidad de Niños (de 2 a 12): %0a \
+    Cantidad de Niños (de 3 a 10): %0a \
     Menu especial: Veggie/Celiaco %0a \
     Tienes alguna alergia o restricción alimentaria?";
 
@@ -26,7 +26,7 @@ const Invite = () => {
   const emailMessage = `mailto:bloin.lourdes@gmail.com?cc=nahuelcalderon@gmail.com&subject=${encodeURIComponent(
     "Confirmo asistencia al cumple de Agos",
   )}&body=Cantidad de Adultos:%0a \
-  Cantidad de Niños (de 2 a 12): %0a \
+  Cantidad de Niños (de 3 a 10): %0a \
   Menu especial: Veggie/Celiaco %0a \
   Tienes alguna alergia o restricción alimentaria?`;
 
