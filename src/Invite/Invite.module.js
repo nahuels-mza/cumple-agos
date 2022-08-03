@@ -12,7 +12,7 @@ const useInviteStyles = makeStyles((theme) => ({
     "& div": {
       margin: "auto",
       [theme.breakpoints.down("sm")]: {
-        width: "100vh !important",
+        width: "80vh !important",
         height: "100vh !important",
       },
     },
@@ -21,7 +21,8 @@ const useInviteStyles = makeStyles((theme) => ({
     objectPosition: "0% 65% !important",
     margin: "auto",
     [theme.breakpoints.down("sm")]: {
-      objectPosition: "0% 95% !important",
+      objectPosition: "50% 200% !important",
+      objectFit: "contain !important",
     },
   },
   textContainer: {
@@ -36,9 +37,9 @@ const useInviteStyles = makeStyles((theme) => ({
     minHeight: "25rem",
     borderRadius: "20px",
     alignItems: "center",
-    padding: "60px",
+    padding: "60px 20px 10px",
     [theme.breakpoints.down("sm")]: {
-      top: "10%",
+      top: "8%",
       width: "90vh",
     },
   },
@@ -54,8 +55,8 @@ const useInviteStyles = makeStyles((theme) => ({
   mapIcon: {
     fontSize: "3rem !important",
   },
-  gifIcon:{
-    fontSize:"2rem !important",
+  gifIcon: {
+    fontSize: "2rem !important",
   },
   title: {
     fontFamily: "Brusher !important",
