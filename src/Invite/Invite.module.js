@@ -40,7 +40,8 @@ const useInviteStyles = makeStyles((theme) => ({
     padding: "60px 20px 10px",
     [theme.breakpoints.down("sm")]: {
       top: "8%",
-      width: "90vh",
+      width: "90vw",
+      padding: "50px 10px 20px",
     },
   },
   confirmation: {
@@ -71,8 +72,8 @@ const useInviteStyles = makeStyles((theme) => ({
   nameContainer: {
     borderRadius: "50%",
     backgroundColor: "black",
-    width: "135px",
-    height: "135px",
+    width: "130px",
+    height: "130px",
     padding: "15px",
     display: "flex",
     alignItems: "center",
