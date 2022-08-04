@@ -17,6 +17,11 @@ const useGiftStyles = makeStyles((theme) => ({
   },
   displayNone: {
     zIndex: "-10",
+    position: "relative",
+    left: "-30%",
+    top: "10px",
+    whiteSpace: "nowrap",
+    width: "-webkit-fill-available",
   },
 }));
 

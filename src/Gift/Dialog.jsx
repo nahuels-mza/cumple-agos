@@ -32,11 +32,9 @@ const GiftDialog = (props) => {
   const textRef_CBU = React.useRef(null);
   const textRef_Alias = React.useRef(null);
 
-  const handleClose = () => {
-    onClose();
-  };
+  const [textCopied, setTextCopied] = React.useState(false);
 
-  const handleListItemClick = () => {
+  const handleClose = () => {
     onClose();
   };
 
@@ -45,21 +43,44 @@ const GiftDialog = (props) => {
       const textRef = account.name.includes("CBU")
         ? textRef_CBU
         : textRef_Alias;
-      textRef.current.focus();
+
       textRef.current.select();
 
       document.execCommand("copy", true, account.value);
     } else {
       navigator.clipboard.writeText(account.value);
     }
+
+    setTextCopied(true);
+
+    setTimeout(() => {
+      setTextCopied(false);
+      onClose();
+    }, 1500);
   };
 
   return (
     <Dialog onClose={handleClose} open={open}>
+      {textCopied && (
+        <Box
+          sx={{
+            maxWidth: "20%",
+            border: "1px solid green",
+            borderRadius: "20px",
+            color: "green",
+            padding: "5px",
+            position: "absolute",
+            top: "10px",
+            left: "45%",
+          }}
+        >
+          <Typography>Copiado!</Typography>
+        </Box>
+      )}
       <List sx={{ pt: 0, margin: "20px 12px" }}>
         <AccountBalanceIcon />
         {accountsTest.map((account) => (
-          <ListItem onClick={handleListItemClick} key={account.name}>
+          <ListItem key={account.name}>
             <ListItemText
               primary={
                 <Typography

@@ -28,7 +28,10 @@ export default function GiftDialogDemo() {
       <Box display="flex" alignItems="center" margin="12px 0">
         <CardGiftcardIcon className={classes.gifIcon} />
         <Button
-          sx={{ border: "3px solid rgba(25, 118, 210, 0.5)" }}
+          sx={{
+            border: "3px solid rgba(25, 118, 210, 0.5)",
+            "&:hover": { border: "3px solid rgba(25, 118, 210, 0.5)" },
+          }}
           variant="outlined"
           onClick={handleClickOpen}
         >
