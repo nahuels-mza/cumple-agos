@@ -1,26 +1,41 @@
 import { makeStyles } from "@mui/styles";
 
 const useInviteStyles = makeStyles((theme) => ({
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    width: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
   imageContainer: {
-    backgroundSize: "cover !important",
-    backgroundPosition: "0% 18% !important",
-    position: "relative",
-    height: "100vh",
+    "& div": {
+      margin: "auto",
+      [theme.breakpoints.down("sm")]: {
+        width: "80vh !important",
+        height: "100vh !important",
+      },
+    },
+  },
+  image: {
+    objectPosition: "0% 65% !important",
+    margin: "auto",
     [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "initial !important",
-      backgroundSize: "contain !important",
-      height: "75vh",
+      objectPosition: "50% 200% !important",
+      objectFit: "contain !important",
     },
   },
   textContainer: {
-    width: "100%",
+    position: "absolute",
+    top: "15%",
+    width: "80vh",
     display: "flex",
     marginTop: "12rem",
     backgroundColor: "#e6e6e699",
     mixBlendMode: "hard-light",
     flexDirection: "column",
     alignItems: "center",
-    padding: "20px",
+    padding: "60px 20px 10px",
     [theme.breakpoints.down("sm")]: {
       width: "calc(90vw)",
       marginTop: "9rem",
@@ -35,11 +50,69 @@ const useInviteStyles = makeStyles((theme) => ({
   },
   confirmation: {
     "& svg": {
-      fill: "#ab83ab",
+      fill: "#b247a49e",
     },
   },
   icon: {
     cursor: "pointer",
+    transition: "transform .2s",
+  },
+  mapIcon: {
+    fontSize: "3rem !important",
+  },
+  gifIcon: {
+    fontSize: "2rem !important",
+  },
+  title: {
+    fontFamily: "Brusher !important",
+    fontSize: "5rem !important",
+    background: "-webkit-linear-gradient(45deg, #09009f, #9500ffa6 80%)",
+    "-webkit-background-clip": "text",
+    "-webkit-text-fill-color": "transparent",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2.75rem !important",
+    },
+  },
+  nameContainer: {
+    borderRadius: "50%",
+    backgroundColor: "black",
+    width: "130px",
+    height: "130px",
+    padding: "15px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    top: "1%",
+    zIndex: "1",
+    background: "-webkit-linear-gradient(45deg, #09009f, #9500ffa6 80%)",
+    [theme.breakpoints.down("sm")]: {
+      width: "17vw !important",
+      height: "17vw !important",
+    },
+  },
+  name: {
+    color: "white",
+    fontFamily: "Brusher !important",
+
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2rem !important",
+    },
+  },
+  dateContainer: {
+    margin: "1rem 0",
+    borderTop: "2px solid black",
+    borderBottom: "2px solid black",
+
+    borderBottomStyle: "dashed",
+    borderTopStyle: "dashed",
+    padding: "5px",
+  },
+  date: {
+    fontSize: "4rem !important",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2rem !important",
+    },
   },
   parallax: {
     willChange: "contents",
