@@ -14,8 +14,8 @@ const MainLayout = () => {
       <Invite />
       <Confirmation />
       <Carousel />
-      <Spotify />
       <Location />
+      <Spotify />
     </Box>
   );
 };

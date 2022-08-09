@@ -30,22 +30,18 @@ const useInviteStyles = makeStyles((theme) => ({
     top: "15%",
     width: "80vh",
     display: "flex",
-    marginTop: "12rem",
+    justifyContent: "space-between",
     backgroundColor: "#e6e6e699",
     mixBlendMode: "hard-light",
     flexDirection: "column",
+    minHeight: "25rem",
+    borderRadius: "20px",
     alignItems: "center",
     padding: "60px 20px 10px",
     [theme.breakpoints.down("sm")]: {
-      width: "calc(90vw)",
-      marginTop: "9rem",
-    },
-  },
-  font: {
-    fontFamily: "fantasy !important",
-    fontWeight: `600 !important`,
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "30px !important",
+      top: "8%",
+      width: "90vw",
+      padding: "50px 10px 20px",
     },
   },
   confirmation: {
@@ -113,10 +109,6 @@ const useInviteStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: "2rem !important",
     },
-  },
-  parallax: {
-    willChange: "contents",
-    overflow: "hidden",
   },
 }));
 
