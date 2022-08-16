@@ -4,65 +4,64 @@ import photo from "../../assets/photo1.png";
 import photo1 from "../../assets/vestido-amarillo.jpeg";
 import photo2 from "../../assets/lengua.jpeg";
 import photo3 from "../../assets/buzo-rojo.jpeg";
-// import useCarouselStyles from "./Carousel.module";
+import sillon from "../../assets/agosMainPic.jpg";
+import pile from "../../assets/pile.jpg";
+import drink from "../../assets/drink.jpg";
+import face from "../../assets/face.jpg";
+import lila from "../../assets/lila.png";
+import useCarouselStyles from "./Carousel.module";
 
 const Carousel = () => {
-  // const classes = useCarouselStyles();
+  const classes = useCarouselStyles();
 
   const itemData = [
     {
-      img: photo,
-      title: "Breakfast",
-      rows: 2,
-      cols: 2,
+      img: sillon,
+      title: "sillon",
     },
     {
-      img: photo1,
+      img: pile,
       title: "Burger",
     },
     {
-      img: photo2,
+      img: lila,
       title: "Camera",
     },
     {
-      img: photo3,
+      img: photo2,
       title: "Coffee",
-      cols: 2,
     },
     {
       img: photo,
       title: "Hats",
-      cols: 2,
     },
     {
       img: photo1,
       title: "Honey",
       author: "@arwinneil",
-      rows: 2,
-      cols: 2,
     },
     {
       img: photo3,
       title: "Basketball",
     },
     {
-      img: photo,
+      img: drink,
       title: "Fern",
     },
     {
-      img: photo1,
+      img: face,
       title: "Mushrooms",
-      cols: 2,
     },
   ];
 
   return (
     <Box component="section">
       <ImageList
+        className={classes.image}
         sx={{ width: 500 /* height: 450 */ }}
         variant="woven"
         cols={3}
-        gap={5}
+        // gap={5}
       >
         {itemData.map((item) => (
           <ImageListItem key={item.img}>

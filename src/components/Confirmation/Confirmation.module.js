@@ -17,7 +17,7 @@ const useConfirmationStyles = makeStyles((theme) => ({
 
   icon: {
     cursor: "pointer",
-    color: "#3cbc6d",
+    color: "#895b89",
     minHeight: "120",
   },
   confirmation: {

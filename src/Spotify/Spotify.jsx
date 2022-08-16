@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Link, Typography } from "@mui/material";
 import useSpotifyStyles from "./Spotify.module";
-import spotify from "../../assets/spotify.png";
+import spotify from "../assets/spotify.png";
 
 const Spotify = () => {
   const style = useSpotifyStyles();
@@ -13,19 +13,17 @@ const Spotify = () => {
       className={style.container}
       display="flex"
       flexDirection="column"
-      padding={1}
+      padding={4}
     >
-      <Typography variant="h5" textAlign="center" color="#1c7d41" mt={4} mb={1}>
-        Preparate para disfrutar de la Fiesta!
-      </Typography>
+      <Typography>PREPARATE PARA DISFRUTAR DE LA FIESTA</Typography>
 
       <Link target="_blank" href={playlist}>
         <img
+          alt="spotify"
           src={spotify}
           width={50}
           fontSize="large"
           fit="cover"
-          alt="spotify"
         />
       </Link>
     </Box>
