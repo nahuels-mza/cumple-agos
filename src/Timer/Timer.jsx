@@ -37,7 +37,7 @@ const Timer = () => {
         <Typography variant="p" textAlign="center" className={classes.font}>
           {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
             <p>
-              Faltan {timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})} dias {timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}
+              Faltan  {timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})} dias {timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}
               :{timeLeft.minutes.toLocaleString('en-US', {minimumIntegerDigits: 2})}:{timeLeft.seconds.toLocaleString('en-US', {minimumIntegerDigits: 2})}
             </p>
           ) : (

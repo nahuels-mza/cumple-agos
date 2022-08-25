@@ -12,9 +12,18 @@ const useLocationStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
   },
+  locationTitle: {
+    border: 'solid 1px #5757568f',
+    backgroundColor: '#5757568f',
+    padding: '10px',
+    color: 'white',
+    width: 'fit-content',
+    margin: 'auto !important',
+    borderRadius: '30px'
+  },
   icon: {
+    fill: '#5757568f !important',
     cursor: "pointer",
-    color: "#3cbc6d",
     fontSize: "3rem !important",
     [theme.breakpoints.down("sm")]: {
       fontSize: "2rem !important",

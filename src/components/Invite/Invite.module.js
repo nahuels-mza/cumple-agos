@@ -10,20 +10,21 @@ const useInviteStyles = makeStyles((theme) => ({
   },
   imageContainer: {
     width: "100%",
-    height: "500px",
+    // height: "500px",
     margin: "auto",
     [theme.breakpoints.down("sm")]: {
       height: "auto",
     },
   },
   parallax: {
-    minHeight: "500px",
+    minHeight: "100vh",
+    filter: 'grayscale(80%)',
     backgroundAttachment: "fixed",
-    backgroundPosition: "0% 53%",
+    backgroundPosition: "0% 25%",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "top",
+      backgroundPosition: "30%",
     },
   },
   image: {
@@ -40,8 +41,8 @@ const useInviteStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     justifyContent: "space-between",
-    backgroundColor: "#93bae93b",
-    mixBlendMode: "hard-light",
+    backgroundColor: "#b9daf252",
+    // mixBlendMode: "hard-light",
     flexDirection: "column",
     minHeight: "8rem",
     borderRadius: "20px",

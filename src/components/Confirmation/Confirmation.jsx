@@ -24,9 +24,9 @@ const Confirmation = () => {
   Tienes alguna alergia o restricción alimentaria?`;
 
   return (
-    <Box component="section" className={classes.container}>
-      <Typography variant="h5" color="#1506a6">
-        No olvides confirmar!
+    <Box component="section" className={classes.container} width='100%' height='200px'>
+      <Typography variant="h4" color='#575756eb'>
+        Confirmar Asistencia
       </Typography>
       <Box flexDirection="row" className={classes.confirmation} margin="10px 0">
         <Link target="_blank" href="https://forms.gle/mvkm2yPdj5CqsqQ28">

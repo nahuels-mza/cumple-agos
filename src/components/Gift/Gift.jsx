@@ -25,7 +25,7 @@ export default function GiftDialogDemo() {
   return (
     <>
       <GiftDialog open={open} onClose={handleClose} />
-      <Box display="flex" alignItems="center" height="8rem">
+      <Box component='section' display="flex" alignItems="center" justifyContent='center' width='100%' height='200px' marginTop={3} sx={{backgroundColor: '#dcecef99'}}>
         <CardGiftcardIcon className={classes.gifIcon} />
         <Button
           sx={{

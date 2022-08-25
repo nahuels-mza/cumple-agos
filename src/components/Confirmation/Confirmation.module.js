@@ -5,20 +5,19 @@ const useConfirmationStyles = makeStyles((theme) => ({
   container: {
     position: "relative",
     bottom: 0,
-    width: "100%",
-    backgroundColor: "#b9f2da",
-    minHeight: "100px",
+    backgroundColor: "#b9daf252",
+    minHeight: "200px",
     justifyContent: "center",
     alignItems: "center",
     display: "flex",
     flexDirection: "column",
-    padding: "20px 10px",
   },
 
   icon: {
     cursor: "pointer",
     color: "#895b89",
-    minHeight: "120",
+    fontSize: '3rem !important',
+    margin: '1rem'
   },
   confirmation: {
     "& svg": {

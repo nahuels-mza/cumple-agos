@@ -33,13 +33,31 @@ const Timer = () => {
     })
 
     return (
-      <Box component="div">
+      <Box component="section" className={classes.container} marginY={3}>
         <Typography variant="p" textAlign="center" className={classes.font}>
           {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
-            <p>
-              Faltan {timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})} dias {timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}
-              :{timeLeft.minutes.toLocaleString('en-US', {minimumIntegerDigits: 2})}:{timeLeft.seconds.toLocaleString('en-US', {minimumIntegerDigits: 2})}
-            </p>
+            <>
+              <Typography className={classes.font}>Faltan</Typography>
+                <Box display='flex' marginY={2}>
+                <Box display='flex' flexDirection='column' marginX={2} sx={{borderRight: 'solid 1px', paddingRight: '25px'}}>
+                  <Typography className={classes.font}>{timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})}</Typography>
+                  <Typography className={classes.font}>dias</Typography>
+                </Box>
+                <Box display='flex' flexDirection='column' marginX={2} sx={{borderRight: 'solid 1px', paddingRight: '25px'}}>
+                  <Typography className={classes.font}>{timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}</Typography>
+                  <Typography className={classes.font}>hs</Typography>
+                </Box>
+                <Box display='flex' flexDirection='column' marginX={2} sx={{borderRight: 'solid 1px', paddingRight: '25px'}}>
+                  <Typography className={classes.font}>{timeLeft.minutes.toLocaleString('en-US', {minimumIntegerDigits: 2})}</Typography>
+                  <Typography className={classes.font}>min</Typography>
+                </Box>
+                <Box display='flex' flexDirection='column' marginX={2} >
+                  <Typography className={classes.font}>{timeLeft.seconds.toLocaleString('en-US', {minimumIntegerDigits: 2})}</Typography>
+                  <Typography className={classes.font}>seg</Typography>
+                </Box>
+              </Box>
+
+            </>
           ) : (
             <p>Gracias por Participar!!</p>
           )}

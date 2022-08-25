@@ -1,8 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import photo from "../../assets/agosMainPic.jpg";
+import photo from "../../assets/IMG_2848.JPG";
 import useInviteStyles from "./Invite.module";
-import Timer from "../Timer/Timer";
 
 const Invite = () => {
   const classes = useInviteStyles();
@@ -36,7 +35,7 @@ const Invite = () => {
             08 | 10 | 22
           </Typography>
         </Box>
-        <Timer />
+
       </Box>
 
       {/* </Box> */}

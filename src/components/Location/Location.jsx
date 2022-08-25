@@ -12,11 +12,12 @@ const Location = () => {
       className={classes.imageContainer}
       padding={4}
       sx={{
-        background: `url(${background}) center`,
+        // background: `url(${background}) center`,
+        backgroundColor: '#b9daf27d'
       }}
       background-size="cover"
       width="100%"
-      height="400px"
+      height="250px"
     >
       <Link
         target="_blank"
@@ -24,11 +25,13 @@ const Location = () => {
         sx={{ textDecoration: "none", color: "inherit" }}
         className={classes.linkContainer}
       >
-        <Typography variant="h2" textAlign="center">
-          <LocationOnIcon className={`${classes.icon}`} fontSize="large" />
-          Ubicacion
+        <Typography variant="h2" textAlign="center" className={classes.locationTitle} >
+          Lugar
         </Typography>
-        <Typography variant="h4" textAlign="center">
+        <Box display='flex' justifyContent='center' marginY={2}>
+          <LocationOnIcon className={`${classes.icon}`} fontSize="large"/>
+        </Box>
+        <Typography variant="h4" textAlign="center" color='#575756eb'>
           Quinta Las Rosas
         </Typography>
       </Link>

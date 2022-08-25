@@ -6,6 +6,7 @@ import useStyles from "./MainLayout.module";
 import Invite from "../Invite/Invite";
 import { Box } from "@mui/material";
 import Carousel from "../Carousel/Carousel";
+import Timer from '../Timer/Timer'
 
 const MainLayout = () => {
   const classes = useStyles();
@@ -13,10 +14,11 @@ const MainLayout = () => {
   return (
     <Box component="div" className={classes.container}>
       <Invite />
-      <Gift />
+      <Timer />
+      <Location />
       <Confirmation />
       <Carousel />
-      <Location />
+      <Gift />
       <Spotify />
     </Box>
   );

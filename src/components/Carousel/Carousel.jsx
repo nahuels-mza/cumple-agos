@@ -7,8 +7,9 @@ import photo3 from "../../assets/buzo-rojo.jpeg";
 import sillon from "../../assets/agosMainPic.jpg";
 import pile from "../../assets/pile.jpg";
 import drink from "../../assets/drink.jpg";
-import face from "../../assets/face.jpg";
+import face from "../../assets/IMG_4085.jpg";
 import lila from "../../assets/lila.png";
+import blackwhite from "../../assets/IMG_3429.jpg";
 import useCarouselStyles from "./Carousel.module";
 
 const Carousel = () => {
@@ -21,36 +22,39 @@ const Carousel = () => {
     },
     {
       img: pile,
-      title: "Burger",
+      title: "pile",
     },
     {
       img: lila,
-      title: "Camera",
+      title: "lila",
     },
     {
       img: photo2,
-      title: "Coffee",
+      title: "photo2",
     },
     {
       img: photo,
-      title: "Hats",
+      title: "photo",
     },
     {
       img: photo1,
-      title: "Honey",
-      author: "@arwinneil",
+      title: "photo1",
     },
     {
       img: photo3,
-      title: "Basketball",
+      title: "photo3",
     },
     {
       img: drink,
-      title: "Fern",
+      title: "drink",
     },
     {
       img: face,
-      title: "Mushrooms",
+      title: "face",
+    },
+    {
+      img: blackwhite,
+      title: "blackwhite",
     },
   ];
 
@@ -58,10 +62,10 @@ const Carousel = () => {
     <Box component="section">
       <ImageList
         className={classes.image}
-        sx={{ width: 500 /* height: 450 */ }}
-        variant="woven"
-        cols={3}
-        // gap={5}
+        sx={{ width: 900 /* height: 450 */ }}
+        variant='masonry'
+        cols={4}
+        gap={15}
       >
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
