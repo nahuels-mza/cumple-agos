@@ -1,4 +1,4 @@
-import Spotify from "../Spotify/Spotify";
+// import Spotify from "../Spotify/Spotify";
 import Location from "../Location/Location";
 import Confirmation from "../Confirmation/Confirmation";
 import Gift from "../Gift/Gift";
@@ -7,6 +7,7 @@ import Invite from "../Invite/Invite";
 import { Box } from "@mui/material";
 import Carousel from "../Carousel/Carousel";
 import Timer from '../Timer/Timer'
+import Redes from '../Redes/Redes'
 
 const MainLayout = () => {
   const classes = useStyles();
@@ -19,7 +20,8 @@ const MainLayout = () => {
       <Confirmation />
       <Carousel />
       <Gift />
-      <Spotify />
+      {/* <Spotify /> */}
+      <Redes />
     </Box>
   );
 };

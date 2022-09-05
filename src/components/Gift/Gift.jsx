@@ -25,7 +25,7 @@ export default function GiftDialogDemo() {
   return (
     <>
       <GiftDialog open={open} onClose={handleClose} />
-      <Box component='section' display="flex" alignItems="center" justifyContent='center' width='100%' height='200px' marginTop={3} sx={{backgroundColor: '#dcecef99'}}>
+      <Box component='section' display="flex" alignItems="center" justifyContent='center' width='100%' height='200px' sx={{backgroundColor: '#dcecef99'}}>
         <CardGiftcardIcon className={classes.gifIcon} />
         <Button
           sx={{
@@ -36,7 +36,7 @@ export default function GiftDialogDemo() {
           onClick={handleClickOpen}
         >
           <Typography sx={{ fontWeight: 600 }}>
-            Si me queres hacer un obsequio
+            Queres hacerme un regalo?
           </Typography>
         </Button>
         <CardGiftcardIcon className={classes.gifIcon} />

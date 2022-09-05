@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Box, Typography } from "@mui/material"
 
 import useTimerStyles from "./Timer.module"
+import { isMobileScreen } from '../../utils/utils.ts'
 
 const Timer = () => {
     const classes = useTimerStyles()
@@ -39,19 +40,19 @@ const Timer = () => {
             <>
               <Typography className={classes.font}>Faltan</Typography>
                 <Box display='flex' marginY={2}>
-                <Box display='flex' flexDirection='column' marginX={2} sx={{borderRight: 'solid 1px', paddingRight: '25px'}}>
+                <Box display='flex' flexDirection='column' marginX={isMobileScreen() ? 1 : 2} sx={{borderRight: 'solid 1px', paddingRight: '20px'}}>
                   <Typography className={classes.font}>{timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})}</Typography>
                   <Typography className={classes.font}>dias</Typography>
                 </Box>
-                <Box display='flex' flexDirection='column' marginX={2} sx={{borderRight: 'solid 1px', paddingRight: '25px'}}>
+                <Box display='flex' flexDirection='column' marginX={isMobileScreen() ? 1 : 2} sx={{borderRight: 'solid 1px', paddingRight: '20px'}}>
                   <Typography className={classes.font}>{timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}</Typography>
                   <Typography className={classes.font}>hs</Typography>
                 </Box>
-                <Box display='flex' flexDirection='column' marginX={2} sx={{borderRight: 'solid 1px', paddingRight: '25px'}}>
+                <Box display='flex' flexDirection='column' marginX={isMobileScreen() ? 1 : 2} sx={{borderRight: 'solid 1px', paddingRight: '20px'}}>
                   <Typography className={classes.font}>{timeLeft.minutes.toLocaleString('en-US', {minimumIntegerDigits: 2})}</Typography>
                   <Typography className={classes.font}>min</Typography>
                 </Box>
-                <Box display='flex' flexDirection='column' marginX={2} >
+                <Box display='flex' flexDirection='column' marginX={isMobileScreen() ? 1 : 2} >
                   <Typography className={classes.font}>{timeLeft.seconds.toLocaleString('en-US', {minimumIntegerDigits: 2})}</Typography>
                   <Typography className={classes.font}>seg</Typography>
                 </Box>

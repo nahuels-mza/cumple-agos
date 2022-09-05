@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import photo from "../../assets/IMG_2848.JPG";
+import photo from "../../assets/chachingo2.jpg";
 import useInviteStyles from "./Invite.module";
 
 const Invite = () => {

@@ -2,7 +2,6 @@ import React from "react";
 import useLocationStyles from "./location.module";
 import { Box, Link, Typography } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import background from "../../assets/locationBackground.png";
 
 const Location = () => {
   const classes = useLocationStyles();

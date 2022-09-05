@@ -1,70 +1,83 @@
 import React from "react";
 import { Box, ImageList, ImageListItem } from "@mui/material";
-import photo from "../../assets/photo1.png";
-import photo1 from "../../assets/vestido-amarillo.jpeg";
 import photo2 from "../../assets/lengua.jpeg";
 import photo3 from "../../assets/buzo-rojo.jpeg";
 import sillon from "../../assets/agosMainPic.jpg";
 import pile from "../../assets/pile.jpg";
-import drink from "../../assets/drink.jpg";
-import face from "../../assets/IMG_4085.jpg";
-import lila from "../../assets/lila.png";
-import blackwhite from "../../assets/IMG_3429.jpg";
+import hada2 from "../../assets/hada2.PNG";
+import plaza2 from "../../assets/plaza2.jpg";
+import montaña from "../../assets/montaña.jpg";
+import escalera3 from "../../assets/escalera3.png";
+import lentes from "../../assets/lentes.jpg";
+
+
 import useCarouselStyles from "./Carousel.module";
 
 const Carousel = () => {
   const classes = useCarouselStyles();
 
   const itemData = [
+
     {
       img: sillon,
       title: "sillon",
     },
     {
-      img: pile,
-      title: "pile",
+      img: photo3,
+      title: "photo3",
+    },
+
+    {
+      img: escalera3,
+      title: "escalera3",
     },
     {
-      img: lila,
-      title: "lila",
+      img: pile,
+      title: "pile",
+      style: {objectPosition: '20%'}
     },
+
+    {
+      img: montaña,
+      title: "montaña",
+    },
+
+    {
+      img: hada2,
+      title: "hada2",
+      style:{objectPosition: 'top'}
+    },
+    {
+      img: plaza2,
+      title: "plaza2",
+    },
+
     {
       img: photo2,
       title: "photo2",
     },
+
+
     {
-      img: photo,
-      title: "photo",
+      img: lentes,
+      title: "lentes",
     },
-    {
-      img: photo1,
-      title: "photo1",
-    },
-    {
-      img: photo3,
-      title: "photo3",
-    },
-    {
-      img: drink,
-      title: "drink",
-    },
-    {
-      img: face,
-      title: "face",
-    },
-    {
-      img: blackwhite,
-      title: "blackwhite",
-    },
+
+
+
+
+
+
   ];
 
   return (
     <Box component="section">
       <ImageList
         className={classes.image}
-        sx={{ width: 900 /* height: 450 */ }}
+        // sx={{ width: 900 /* height: 450 */ }}
+        rowHeight={200}
         variant='masonry'
-        cols={4}
+        cols={3}
         gap={15}
       >
         {itemData.map((item) => (
@@ -74,6 +87,7 @@ const Carousel = () => {
               srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
+              style={item.style ? item.style : {}}
             />
           </ImageListItem>
         ))}

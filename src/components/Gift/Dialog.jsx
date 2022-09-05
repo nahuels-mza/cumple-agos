@@ -115,7 +115,7 @@ const GiftDialog = (props) => {
         <List>
           <CardGiftcardIcon />
           <ListItem>
-            <ListItemText primary="En la fiesta tambien habra un lugar para recibir regalos " />
+            <ListItemText primary="En la fiesta tambien habra un lugar para dejar regalos " />
           </ListItem>
         </List>
       </List>

@@ -2,10 +2,10 @@ import { makeStyles } from "@mui/styles";
 
 const useTimerStyles = makeStyles((theme) => ({
   container: {
-    border: 'solid 1px',
+    border: 'solid 0,4px',
     borderRadius: '100px 50px',
     borderStyle: 'groove',
-    padding: '1.5rem',
+    padding: '1.2rem',
     backgroundColor: '#b9daf252'
   },
   font: {

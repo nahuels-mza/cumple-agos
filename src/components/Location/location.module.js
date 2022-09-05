@@ -14,12 +14,14 @@ const useLocationStyles = makeStyles((theme) => ({
   },
   locationTitle: {
     border: 'solid 1px #5757568f',
-    backgroundColor: '#5757568f',
-    padding: '10px',
+    backgroundColor: '#61acce',
+    padding: '10px 19px',
     color: 'white',
     width: 'fit-content',
     margin: 'auto !important',
-    borderRadius: '30px'
+    borderRadius: '30px',
+    fontFamily: 'initial !important',
+
   },
   icon: {
     fill: '#5757568f !important',
