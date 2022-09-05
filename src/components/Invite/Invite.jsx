@@ -34,7 +34,11 @@ const Invite = () => {
           <Typography variant="h4" textAlign="center" className={classes.date}>
             08 | 10 | 22
           </Typography>
+
         </Box>
+        <Typography fontStyle="italic" textAlign="center" fontSize= "1.8rem" fontWeight={600}>
+          21 hs
+        </Typography>
 
       </Box>
 
