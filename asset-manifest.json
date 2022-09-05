@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cumple-agos/static/css/main.2d198918.css",
-    "main.js": "/cumple-agos/static/js/main.34cf84c6.js",
+    "main.js": "/cumple-agos/static/js/main.5a915d8d.js",
     "static/js/787.654fbaae.chunk.js": "/cumple-agos/static/js/787.654fbaae.chunk.js",
     "static/media/escalera3.png": "/cumple-agos/static/media/escalera3.fa33cf85c947d20a32e2.png",
     "static/media/hada2.PNG": "/cumple-agos/static/media/hada2.bde841a270f5ab76ad56.PNG",
@@ -16,11 +16,11 @@
     "static/media/pile.jpg": "/cumple-agos/static/media/pile.3d1fd3d5fd67f3977a2a.jpg",
     "index.html": "/cumple-agos/index.html",
     "main.2d198918.css.map": "/cumple-agos/static/css/main.2d198918.css.map",
-    "main.34cf84c6.js.map": "/cumple-agos/static/js/main.34cf84c6.js.map",
+    "main.5a915d8d.js.map": "/cumple-agos/static/js/main.5a915d8d.js.map",
     "787.654fbaae.chunk.js.map": "/cumple-agos/static/js/787.654fbaae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d198918.css",
-    "static/js/main.34cf84c6.js"
+    "static/js/main.5a915d8d.js"
   ]
 }
