@@ -1,17 +1,26 @@
 {
   "files": {
     "main.css": "/cumple-agos/static/css/main.2d198918.css",
-    "main.js": "/cumple-agos/static/js/main.fe65f8c4.js",
+    "main.js": "/cumple-agos/static/js/main.fd016003.js",
     "static/js/787.654fbaae.chunk.js": "/cumple-agos/static/js/787.654fbaae.chunk.js",
+    "static/media/escalera3.png": "/cumple-agos/static/media/escalera3.fa33cf85c947d20a32e2.png",
+    "static/media/hada2.PNG": "/cumple-agos/static/media/hada2.bde841a270f5ab76ad56.PNG",
+    "static/media/chachingo2.jpg": "/cumple-agos/static/media/chachingo2.9ffe7bd3e6039d6ff19e.jpg",
     "static/media/agosMainPic.jpg": "/cumple-agos/static/media/agosMainPic.5827b64dfb7e7b46f23e.jpg",
+    "static/media/plaza2.jpg": "/cumple-agos/static/media/plaza2.c2edc844dba5d3c42e3e.jpg",
+    "static/media/montaña.jpg": "/cumple-agos/static/media/montaña.b613021fbc843d4b0915.jpg",
+    "static/media/lentes.jpg": "/cumple-agos/static/media/lentes.3a0c56ee3c9bb6e1ba30.jpg",
+    "static/media/buzo-rojo.jpeg": "/cumple-agos/static/media/buzo-rojo.a6d49ed3cdc870ac76c4.jpeg",
     "static/media/Brusher.ttf": "/cumple-agos/static/media/Brusher.df09075cd8c853e96f3d.ttf",
+    "static/media/lengua.jpeg": "/cumple-agos/static/media/lengua.2639365e035518885137.jpeg",
+    "static/media/pile.jpg": "/cumple-agos/static/media/pile.3d1fd3d5fd67f3977a2a.jpg",
     "index.html": "/cumple-agos/index.html",
     "main.2d198918.css.map": "/cumple-agos/static/css/main.2d198918.css.map",
-    "main.fe65f8c4.js.map": "/cumple-agos/static/js/main.fe65f8c4.js.map",
+    "main.fd016003.js.map": "/cumple-agos/static/js/main.fd016003.js.map",
     "787.654fbaae.chunk.js.map": "/cumple-agos/static/js/787.654fbaae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d198918.css",
-    "static/js/main.fe65f8c4.js"
+    "static/js/main.fd016003.js"
   ]
 }
