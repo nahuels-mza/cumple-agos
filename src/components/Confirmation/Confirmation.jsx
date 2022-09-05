@@ -10,6 +10,7 @@ const Confirmation = () => {
   // TODO ADD FORMAT HERE
   const whatsMessage = // eslint-disable-next-line
     "Hola Agos confirmo mi asistencia para el cumple%0a \
+    Nombre y apellido:%0a \
     Cantidad de Adultos:%0a \
     Cantidad de Niños (de 3 a 10): %0a \
     Menu especial: Veggie/Celiaco %0a \
@@ -18,7 +19,7 @@ const Confirmation = () => {
   // FROM https://mailto.vercel.app/
   const emailMessage = `mailto:bloin.lourdes@gmail.com?cc=nahuelcalderon@gmail.com&subject=${encodeURIComponent(
     "Confirmo asistencia al cumple de Agos",
-  )}&body=Cantidad de Adultos:%0a \
+  )}&body=Nombre y apellido:%0a \Cantidad de Adultos:%0a \
   Cantidad de Niños (de 3 a 10): %0a \
   Menu especial: Veggie/Celiaco %0a \
   Tienes alguna alergia o restricción alimentaria?`;

@@ -24,8 +24,8 @@ const useInviteStyles = makeStyles((theme) => ({
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "top",
-      minHeight: "70vh",
+      backgroundPosition: "0 -105px",
+      minHeight: "50vh",
       height: '100%',
       backgroundSize: "contain",
     },
