@@ -37,7 +37,7 @@ const Invite = () => {
 
         </Box>
         <Typography fontStyle="italic" textAlign="center" fontSize= "1.8rem" fontWeight={600}>
-          21 hs
+          20.30 hs
         </Typography>
 
       </Box>

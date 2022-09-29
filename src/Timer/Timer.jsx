@@ -5,7 +5,7 @@ import useTimerStyles from "./Timer.module"
 
 const Timer = () => {
     const classes = useTimerStyles()
-    const partyDate = new Date("2022-10-08T21:00:00")
+    const partyDate = new Date("2022-10-08T20:30:00")
     const calculateTimeLeft = () => {
       const now =  new Date();
       const difference = partyDate.getTime() - now.getTime();
