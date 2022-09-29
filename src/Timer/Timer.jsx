@@ -5,7 +5,7 @@ import useTimerStyles from "./Timer.module"
 
 const Timer = () => {
     const classes = useTimerStyles()
-    const partyDate = new Date("2022-10-08T21:00:00")
+    const partyDate = new Date("2022-10-08T20:30:00")
     const calculateTimeLeft = () => {
       const now =  new Date();
       const difference = partyDate.getTime() - now.getTime();
@@ -37,7 +37,7 @@ const Timer = () => {
         <Typography variant="p" textAlign="center" className={classes.font}>
           {timeLeft.hours || timeLeft.minutes || timeLeft.seconds ? (
             <p>
-              Faltan {timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})} dias {timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}
+              Faltan  {timeLeft.days.toLocaleString('en-US', {minimumIntegerDigits: 2})} dias {timeLeft.hours.toLocaleString('en-US', {minimumIntegerDigits: 2})}
               :{timeLeft.minutes.toLocaleString('en-US', {minimumIntegerDigits: 2})}:{timeLeft.seconds.toLocaleString('en-US', {minimumIntegerDigits: 2})}
             </p>
           ) : (

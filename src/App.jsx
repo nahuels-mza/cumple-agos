@@ -1,5 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Invite from "./Invite/Invite";
+import MainLayout from "./components/MainLayout/MainLayout";
 import "./index.css";
 
 const theme = createTheme({
@@ -11,7 +11,7 @@ const theme = createTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Invite />
+      <MainLayout />
     </ThemeProvider>
   );
 };
